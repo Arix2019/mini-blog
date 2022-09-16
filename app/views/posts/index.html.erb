@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Mini-Blog on Rails - Posts</h1>
+
+<div id="posts">
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <p>
+      <%= link_to "Mostrar postagem", post %>
+    </p>
+    <br>
+  <% end %>
+</div>
+
+<%= link_to "Adicionar nova postagem", new_post_path %>
+<%= link_to "Voltar", root_path %>

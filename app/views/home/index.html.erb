@@ -1,0 +1,10 @@
+<div id class="index_title">Ruby - Mini Blog on Rails - Index</div>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<%# inserindo código ruby dentro do html %>
+<% @posts.each do |post| %>
+    <h4><%= link_to post.title, post %></h4>
+    <p><%= post.description %></p> 
+<% end %>
+<hr>
+<div class="btn_posts"><%= link_to "Postagens", posts_path %></div>

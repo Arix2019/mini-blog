@@ -1,0 +1,50 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+    background-color: #eee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#posts {
+    background-color: #dbdbdb;
+}
+
+.post_title{
+    color: rgb(70, 70, 70);
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.post_description {
+    color: rgb(70, 70, 70);   
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;    
+}
+
+.index_title {
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;    
+    text-align: center;
+}
+
+.btn_posts {
+    font-size: 15px;
+    color: rgba(34, 0, 0, 0.11);
+    font-weight: bold;
+    text-transform: uppercase;
+}
